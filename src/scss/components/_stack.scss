@@ -1,0 +1,36 @@
+.stack {
+  padding-top: 360px;
+  @include tablet{
+    padding-top: 180px;
+  }
+  @include mobile-s{
+    padding-top: 100px;
+  }
+
+
+  &__tech {
+    padding-top: 140px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 75px 100px;
+    align-items: center;
+    justify-items: center;
+    @include tablet{
+      gap: 50px 75px;
+    }
+    @include medium-tablet{
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include small-tablet{
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+      padding-top: 100px;
+    }
+    @include mobile-s{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      padding-top: 50px;
+    }
+  }
+
+}

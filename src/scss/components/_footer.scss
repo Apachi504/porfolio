@@ -1,0 +1,182 @@
+.footer {
+  padding-top: 200px;
+  padding-bottom: 60px;
+
+  @include small-tablet {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+  &__logo {
+    @include small-tablet {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__top {
+    justify-content: space-between;
+    align-items: center;
+    @include small-tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__bottom {
+    justify-content: space-between;
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+    @include small-tablet {
+      flex-direction: column;
+      align-items: center;
+
+    }
+  }
+
+  &__list {
+    @include tablet {
+      margin-bottom: 30px;
+    }
+    @include mobile-s {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+  }
+
+  &__nav {
+    align-items: center;
+    @include small-tablet {
+      flex-direction: column;
+    }
+
+    &--list {
+      @include small-tablet {
+        flex-direction: column;
+      }
+    }
+
+    &--item {
+      margin-right: 50px;
+      color: var(--grey-color);
+      @include small-tablet {
+        margin-right: 0px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      @include mobile-s {
+         margin-bottom: 15px;
+       }
+    }
+
+    &--date {
+      font-family: var(--second-family);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 144%;
+      color: var(--title-color);
+      @include hover {
+        background: linear-gradient(170deg, #13B0F5 3%,#E70FAA 150% );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  &__copy {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    color: var(--grey-color);
+    @include medium-tablet {
+      margin-top: 30px;
+    }
+    @include mobile-s {
+    font-size: 15px;
+      margin-top: 0;
+    }
+    @include mobile-s {
+      font-size: 12px;
+    }
+  }
+
+  hr {
+    margin: 42px 0 60px 0;
+    border: 2px solid rgba(20, 20, 20, 0.38);
+  }
+
+  .bottom {
+    &__item {
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+
+      @include mobile {
+        &:not(:last-child) {
+          margin-right: 35px;
+        }
+      }
+      @include mobile-s {
+          margin-right: 0;
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+      }
+
+    }
+
+    &__link {
+      font-family: var(--second-family);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 144%;
+      color: var(--title-color);
+      @include hover {
+        background: linear-gradient(170deg, #13B0F5 3%,#E70FAA 150% );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  .pavan {
+    background: -webkit-linear-gradient(45deg, rgb(115, 104, 212), rgb(137, 86, 203), rgb(153, 75, 198));
+    background: -moz-linear-gradient(45deg, rgb(115, 104, 212), rgb(137, 86, 203), rgb(153, 75, 198));
+    background: linear-gradient(45deg, rgb(115, 104, 212), rgb(137, 86, 203), rgb(153, 75, 198));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .love {
+    background: -webkit-linear-gradient(45deg, rgb(176, 57, 190), rgb(186, 50, 187), rgb(193, 44, 184));
+    background: -moz-linear-gradient(45deg, rgb(176, 57, 190), rgb(186, 50, 187), rgb(193, 44, 184));
+    background: linear-gradient(45deg, rgb(176, 57, 190), rgb(186, 50, 187), rgb(193, 44, 184));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .coffee {
+    background: -webkit-linear-gradient(45deg, rgb(205, 35, 179), rgb(198, 22, 158), rgb(209, 15, 155));
+    background: -moz-linear-gradient(45deg, rgb(205, 35, 179), rgb(198, 22, 158), rgb(209, 15, 155));
+    background: linear-gradient(45deg, rgb(205, 35, 179), rgb(198, 22, 158), rgb(209, 15, 155));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .social {
+    &__item {
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }}
+
